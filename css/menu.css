@@ -295,8 +295,25 @@
       text-decoration: none;
   }
 
-  
+  /* scroll bar */
 
+  ::-webkit-scrollbar {
+      width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+      background: #174a6d;
+      border-radius: 20px;
+      height: 40px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+      background: #491C66;
+  }
 
   /* footer */
 
