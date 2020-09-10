@@ -1,0 +1,493 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    font-family: "Josefin Sans", sans-serif;
+  }
+  
+  .navbar {
+    font-size: 18px;
+    background-image: linear-gradient(260deg, #174a6d 0%, #581064 100%);
+    /*border: 1px solid rgba(0, 0, 0, 0.2);*/
+    padding-bottom: 10px;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  #main-nav {
+    list-style-type: none;
+    display: none;
+    flex-direction: column;
+  }
+  
+  #main-nav li {
+    text-align: center;
+    margin: 15px auto;
+  }
+  
+  .nav-links,
+  .logo {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.733);
+  }
+  
+  .logo:hover,
+  .nav-links:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+  
+  .logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  
+  #navbar-toggle {
+    position: absolute;
+   
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  #navbar-toggle:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .presentation {
+      text-align: center;
+      background-image: linear-gradient(260deg, #174a6d 0%, #581064 100%);
+      margin-bottom: 20px;
+      color: #FFFFFF;
+      padding-bottom: 50px;
+  }
+  
+  .profile {
+      border-radius: 50%;
+      margin-top: 70px;
+  }
+
+  .passport {
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-top: 20px; 
+      margin-bottom: 20px; 
+  }
+
+  .passport p {
+      margin-top: 20px;
+  }
+
+  .ability-icon {
+      width: 100px;
+  }
+
+  .list-icon {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+      display: inline;
+  }
+
+  .list-icon li {
+      display: inline-block;
+  }
+
+  .list-icon li figure {
+      text-align: center;
+      text-decoration: none;
+      flex-wrap: wrap;
+      margin-left: 15px;
+      display: inline-block;
+  } 
+
+/*
+  .list-icon figure {
+      text-align: center;
+  }*/
+
+  .list-icon figure img {
+      vertical-align: top;
+      margin-right: 10px;
+      
+  }
+
+  .process-figure {
+      margin-right: 10px;
+  }
+
+  .consultant-figure {
+      margin-right: 10px;
+  }
+
+  .process-icon {
+      margin-right: 25px;
+  }
+
+  
+
+  .costumer-icon {
+      margin-left: 20px;
+      margin-top: 20px;
+  }
+
+  .ability-name {
+      text-transform: uppercase;
+      margin: 20px;
+  }
+
+  /* section about-me */
+
+  .about {
+      text-align: center;
+      padding: 20px;
+  }
+
+  .section-title {
+      color: #1f79dd;
+      text-transform: uppercase;
+      margin: 0 0 2em 0;
+  }
+
+  .about-icon {
+      width: 100px;
+  }
+
+  .carrer {
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+
+  .carreer h2 {
+      margin-top: 10px;
+  }
+
+  .carreer p {
+      margin-top: 20px;
+  }
+
+  .problem-solving {
+      margin-top: 30px;
+  }
+
+  /* section experiences */
+
+  .experience {
+      text-align: center; 
+      padding: 20px;
+  }
+
+  .sec-tit {
+      position: relative;
+  }
+
+  .sec-tit:before {
+      content: "";
+      display: block;
+      width: 55px;
+      height: 2px;
+      background: #1f79dd;
+      left: 0;
+      top: 50%;
+      position: absolute;
+
+  }
+
+  .sec-tit:after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 2px;
+    background: #1f79dd;
+    right: 0;
+    top: 50%;
+    position: absolute;
+
+}
+
+  .experience-list {
+    margin-top: 30px;
+  }
+
+  .experience-list p {
+      margin-top: 10px;
+  }
+
+  .work-type {
+      color: #491C66;
+      font-weight: bold;
+      font-size: 20px;
+  }
+
+  .exp {
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+
+  .exp h3, h4 {
+    margin-top: 10px;
+  }
+
+  .exp p {
+      margin-top: 20px;
+  }
+
+  /* section skills */
+
+  .skill-section {
+      text-align: center;
+      margin: 60px 0 30px 0;
+      padding: 20px;
+    
+  }
+
+  .introduction-skill {
+      margin-bottom: 20px;
+  }
+
+  .skill-icon{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .skill-list {
+      margin-top: 20px;
+  }
+
+  .fg-icon h3 {
+      color: #8958A9;
+  }
+
+  .fg-desc {
+      width: 250px;
+      margin-top: 15px;
+  }
+
+  .skill-par {
+    display: flex; 
+    justify-content: center;
+}
+
+  /* Linkedin */
+
+  .social-desc {
+      margin-top: 30px;
+  }
+  .social-link {
+      text-decoration: none;
+  }
+
+  
+
+
+  /* footer */
+
+  .foot {
+      
+      background-image: linear-gradient(260deg, #174a6d 0%, #581064 100%);
+      width: 100%;
+      color: rgba(255, 255, 255, 0.733);
+      text-align: center;
+      height: 100px;
+  }
+
+  .foot-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.foot-icon {
+    width: 30px;
+}
+
+.foot-dev, .foot-icon {
+    margin: 30px 0 20px 0;
+}
+
+.foot-dev p:last-of-type{
+    margin-top: 10px;
+}
+
+  @media screen and (min-width: 768px) {
+  
+    .navbar {
+      display: flex;
+      justify-content: space-around;
+      padding-bottom: 0;
+      height: 70px;
+      align-items: center;
+    }
+  
+    #main-nav {
+      display: flex !important;
+      margin-right: 30px;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  
+    #main-nav li {
+      margin: 0;
+    }
+  
+    .nav-links {
+      margin-left: 40px;
+    }
+  
+    .logo {
+      margin-top: 0;
+      font-weight: bold;
+    }
+  
+    #navbar-toggle {
+      display: none;
+    }
+
+    .profile {
+        margin-top: 90px;
+    }
+
+    .passport {
+        content: 80px;
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-bottom: 30px;
+    }
+
+    .list-icon figure img {
+        vertical-align: top;
+        margin-right: 30px;
+        
+    }
+
+    .list-icon {
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .ability-icon {
+        margin-left: 30px;
+    }
+
+    .consultant-icon {
+        margin-right: 15px;
+    }
+
+    .consultant-figure {
+        margin-left: 25px;
+    }
+
+    /* section about */
+    .carreer {
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-bottom: 30px;
+    }
+
+    .about-icon {
+        width: 150px;
+    }
+
+    /* section experiences */
+
+    .exp {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .container, .experience, .experience-list {
+        display: table-row;
+    }
+
+    .container, .experience, .exp {
+        display: table-cell; 
+        width: 30%;
+        padding: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .container, .experience, .exp, .first-exp {
+        text-align: center;
+    }
+
+    .container, .experience, .exp, .second-exp {
+        text-align: center;
+    }
+
+    .container, .experience, .exp, .third-exp {
+        text-align: center;
+    }
+
+    .experience .section-title {
+        margin-bottom: 30px;
+    }
+
+    .intest {
+        margin-bottom: 30px;
+    }
+
+
+    .sec-tit:before {
+        content: "";
+        display: block;
+        width: 30%;
+        height: 2px;
+        background: #1f79dd;
+        left: 10px;
+        top: 50%;
+        position: absolute;
+  
+    }
+  
+    .sec-tit:after {
+      content: "";
+      display: block;
+      width: 30%;
+      height: 2px;
+      background: #1f79dd;
+      right: 10px;
+      top: 50%;
+      position: absolute;
+    }
+
+   
+    .skill-icon {
+        width: 60%;
+        justify-content: space-around;
+        margin: 0 0 0 0;
+    }
+
+    .skill-par {
+        display: flex; 
+        justify-content: center;
+    }
+    .skill-list {
+        margin-right: 20px;
+    }
+
+    .skill-list:last-child{
+        margin-right: 0;
+    }
+
+    /* footer */
+
+
+ } 
